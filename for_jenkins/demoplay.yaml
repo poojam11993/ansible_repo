@@ -1,0 +1,10 @@
+---
+- name: create a directory
+  hosts: all
+  tasks:
+    - name: new dir
+      file:
+        path: /root/ansi_directory
+        state: directory
+        mode: '0755'
+
